@@ -1,0 +1,27 @@
+{
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "password": "mypassword123"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/vpn"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
